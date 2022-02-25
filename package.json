@@ -3,16 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.3",
+    "@react-pdf-viewer/core": "^3.1.0",
+    "@react-pdf-viewer/default-layout": "^3.1.0",
+    "@react-pdf-viewer/toolbar": "^3.1.0",
+    "@reduxjs/toolkit": "^1.7.2",
     "cra-template-overwolf-typescript-redux": "2.2.11",
+    "i18next": "^21.6.12",
+    "overwolf-hooks": "^2.0.1",
+    "path-browserify": "^1.0.1",
+    "pdfjs-dist": "^2.12.313",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0"
+    "react-i18next": "^11.15.5",
+    "react-icons": "^4.3.1",
+    "react-redux": "^7.2.6",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
     "pack-overwolf": "node create-production-overwolf-build",
     "dist-overwolf": "tar -a -c -f dist.zip -C build *",
     "start-remote-devtools": "node remote-dev-redux-devtools",
@@ -38,10 +51,11 @@
     ]
   },
   "devDependencies": {
+    "@overwolf/types": "^3.12.0",
+    "@types/react-dom": "^17.0.11",
     "@types/remote-redux-devtools": "^0.5.4",
     "remote-redux-devtools": "^0.5.16",
-    "remotedev-server": "^0.3.1",
-    "@overwolf/types": "^3.12.0"
+    "remotedev-server": "^0.3.1"
   },
   "homepage": "."
 }
