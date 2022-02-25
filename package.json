@@ -1,0 +1,47 @@
+{
+  "name": "book-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cra-template-overwolf-typescript-redux": "2.2.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "pack-overwolf": "node create-production-overwolf-build",
+    "dist-overwolf": "tar -a -c -f dist.zip -C build *",
+    "start-remote-devtools": "node remote-dev-redux-devtools",
+    "build:overwolf": "npm run build && npm run pack-overwolf && npm run dist-overwolf",
+    "create-opk": "tar -a -c -f dist-opk.zip -C build/app * && node create-opk"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/remote-redux-devtools": "^0.5.4",
+    "remote-redux-devtools": "^0.5.16",
+    "remotedev-server": "^0.3.1",
+    "@overwolf/types": "^3.12.0"
+  },
+  "homepage": "."
+}
