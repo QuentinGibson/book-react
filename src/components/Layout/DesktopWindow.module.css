@@ -1,27 +1,21 @@
-.container {}
+.container {
+  display: grid;
+  grid-row: 10vh 60vh 30vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 .navigation {
   background-color: #201c33;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 15vh;
+  grid-row: 1;
 }
 
 .main {
-  height: 75vh;
-  width: 100%;
+  grid-row: 2;
 }
 
 
 .footer {
-  height: 0vh;
-  width: 100%;
-}
-
-.icon {
-  color: white;
-  font-size: 20px;
-  margin: 10px 0;
+  grid-row: 3;
+  min-height: 400px;
 }

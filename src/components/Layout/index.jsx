@@ -4,10 +4,12 @@ import React, { useEffect, useRef } from "react";
 
 export default function Layout({ children }) {
   return (
-    <div className={style.container}>
+    <>
       <DesktopHeader />
-      {children}
-      <footer className={style.footer}>Ads here in the future</footer>
-    </div>
+      <div className={style.container}>
+        {children}
+        <footer className={style.footer}>Ads here in the future</footer>
+      </div>
+    </>
   );
 }
