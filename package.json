@@ -2,6 +2,14 @@
   "name": "book-react",
   "version": "0.1.0",
   "private": true,
+  "watch": {
+    "build:overwolf": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,jsx,tsx,ts"
+    }
+  },
   "dependencies": {
     "@craco/craco": "^6.4.3",
     "@react-pdf-viewer/core": "^3.1.0",
@@ -30,6 +38,7 @@
     "dist-overwolf": "tar -a -c -f dist.zip -C build *",
     "start-remote-devtools": "node remote-dev-redux-devtools",
     "build:overwolf": "npm run build && npm run pack-overwolf && npm run dist-overwolf",
+    "watch": "npx npm-watch",
     "create-opk": "tar -a -c -f dist-opk.zip -C build/app * && node create-opk"
   },
   "eslintConfig": {

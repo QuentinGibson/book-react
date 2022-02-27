@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 95%;
-  grid-template-rows: 85vh 15vh;
+  grid-template-rows: 75vh 15vh;
   grid-template-areas:
     'navigation main'
     'footer footer';
