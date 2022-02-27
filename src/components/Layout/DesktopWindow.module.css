@@ -1,0 +1,27 @@
+.container {}
+
+
+.navigation {
+  background-color: #201c33;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 15vh;
+}
+
+.main {
+  height: 75vh;
+  width: 100%;
+}
+
+
+.footer {
+  height: 0vh;
+  width: 100%;
+}
+
+.icon {
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}
