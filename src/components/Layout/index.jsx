@@ -1,15 +1,12 @@
 import style from "./DesktopWindow.module.css";
 import { DesktopHeader } from "./DesktopHeader";
 import React, { useEffect, useRef } from "react";
+import Ad from "components/Ad/Ad";
 
 export default function Layout({ children }) {
   return (
     <>
-      <DesktopHeader />
-      <div className={style.container}>
-        {children}
-        <footer className={style.footer}>Ads here in the future</footer>
-      </div>
+      <div className={style.container}>{children}</div>
     </>
   );
 }

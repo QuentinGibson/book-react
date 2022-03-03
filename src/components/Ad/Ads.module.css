@@ -1,0 +1,5 @@
+.adContainer {
+    height: 300px;
+    width: 400px;
+    grid-row: 2;
+}

@@ -12,7 +12,14 @@
     "window_icon": "TaskbarIcon.png",
     "description": "A customizable app for reading pdf files during your downtime. Notes with markdown support and synced notes! More coming soon!"
   },
-  "permissions": [""],
+  "permissions": [
+    "Streaming",
+    "Hotkeys",
+    "GameInfo",
+    "FileSystem",
+    "Logging",
+    "Profile"
+  ],
   "data": {
     "game_targeting": {
       "type": "all"
@@ -28,6 +35,13 @@
         "start_minimized": false
       }
     ],
+    "hotkeys": {
+      "show_PDFGaming": {
+        "title": "Show/Hide In-Game App",
+        "default": "Shift+F2",
+        "action-type": "toggle"
+      }
+    },
     "start_window": "desktop",
     "windows": {
       "background": {
@@ -37,8 +51,6 @@
       },
       "desktop": {
         "file": "Files/index.html",
-        "native_window": true,
-        "transparent": true,
         "resizable": true,
         "size": {
           "width": 1212,
@@ -52,12 +64,12 @@
           "width": 2150,
           "height": 3000
         },
+        "block_top_window_navigation": true,
+        "popup_blocker": true,
+        "mute": true,
         "show_in_taskbar": true
       }
     },
-    "block_top_window_navigation": true,
-    "popup_blocker": true,
-    "mute": true,
     "force_browser": "user",
     "developer": {
       "enable_auto_refresh": true,
